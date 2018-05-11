@@ -1,0 +1,77 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext.kotlin_version = '1.2.41'
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.2'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+// Define versions in a single place
+ext {
+    //config data binding compiler with kotlin
+    dataBindingVersion = '3.1.2'
+
+    // Sdk and tools
+    minSdkVersion = 17
+    targetSdkVersion = 27
+    compileSdkVersion = 27
+    buildToolsVersion = '26.0.2'
+
+    // App dependencies
+    kotlinVersion = kotlin_version
+    supportLibraryVersion = '27.1.1'
+    gsonVersion = '2.8.0'
+    calligraphyVersion = '2.2.0'
+    glideVersion = '3.7.0'
+    rx2FastAndroidNetworking = '1.0.1'
+    dagger2Version = '2.13'
+    rxjava2Version = '2.0.6'
+    rxandroidVersion = '2.0.1'
+    butterKnifeVersion = '8.8.1'
+    roomDatabaseVersion = '1.0.0'
+    placeholderviewVersion = '0.6.1'
+    debugDBVersion = '1.0.3'
+    timberVersion = '4.6.0'
+    custombottomsheetVersion = '0.9.1'
+
+    //viewmodel
+    lifecycle = '1.1.1'
+
+    //Test dependencies
+    junitVersion = '4.12'
+    espressoVersion = '2.2.2'
+    mockitoVersion = '2.7.1'
+
+    //firebase
+    firebaseVersion = '15.0.0'
+
+    //play services
+    playServices = '15.0.0'
+    geofireVersion = '2.1.1'
+
+    //dexter permission version
+    dexterVersion = '4.2.0'
+
+    //runtime
+    runtimeVersion = '100.1.0'
+}

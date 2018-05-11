@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Catalog Movie Kotlin</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="now_playing_fragment">Now Playing</string>
+    <string name="upcoming_fragment">Upcoming</string>
+</resources>
