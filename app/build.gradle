@@ -21,7 +21,7 @@ android {
     }
     buildTypes {
         debug {
-            buildConfigField("String", "API_KEY", "\"b607c4a709f1c7b173cdf2e63c87eb90\"")
+            buildConfigField("String", "API_KEY", "\"add_your_api_key\"")
             buildConfigField("String", "BASE_URL", "\"https://api.themoviedb.org/3/search/movie\"")
             buildConfigField("String", "BASE_URL_NOW_PLAYING", "\"https://api.themoviedb.org/3/movie/now_playing\"")
             buildConfigField("String", "BASE_URL_UPCOMING", "\"https://api.themoviedb.org/3/movie/upcoming\"")
