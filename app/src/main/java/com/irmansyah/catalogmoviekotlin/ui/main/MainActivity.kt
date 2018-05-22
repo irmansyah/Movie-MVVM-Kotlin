@@ -45,13 +45,13 @@ class MainActivity : BaseActivity<ActivityMainBinding, MainViewModel>(), HasSupp
 
     override fun onFragmentDetached(tag: String) { }
 
-    override fun supportFragmentInjector(): AndroidInjector<Fragment>? = fragmentDispatchingAndroidInjector
+    override fun supportFragmentInjector(): AndroidInjector<Fragment> = fragmentDispatchingAndroidInjector
 
     private fun setUpFeedPagerAdapter() {
         mainPagerAdapter.count = 2
         main_view_pager.adapter = mainPagerAdapter
-        tab_layout.addTab(tab_layout.newTab().setText(R.string.now_playing_fragment))
-        tab_layout.addTab(tab_layout.newTab().setText(R.string.upcoming_fragment))
+        tab_layout.addTab(tab_layout.newTab().setText(R.string.now_playing))
+        tab_layout.addTab(tab_layout.newTab().setText(R.string.upcoming))
         main_view_pager.offscreenPageLimit = tab_layout.tabCount
         main_view_pager.addOnPageChangeListener(TabLayout.TabLayoutOnPageChangeListener(tab_layout))
         tab_layout.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {

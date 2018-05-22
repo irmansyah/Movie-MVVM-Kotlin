@@ -8,6 +8,7 @@ apply plugin: 'kotlin-kapt'
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
     defaultConfig {
         applicationId "com.irmansyah.catalogmoviekotlin"
         minSdkVersion rootProject.ext.minSdkVersion
@@ -18,10 +19,9 @@ android {
         vectorDrawables.useSupportLibrary = true
         multiDexEnabled true
     }
-
     buildTypes {
         debug {
-            buildConfigField("String", "API_KEY", "\"add your api key here\"")
+            buildConfigField("String", "API_KEY", "\"b607c4a709f1c7b173cdf2e63c87eb90\"")
             buildConfigField("String", "BASE_URL", "\"https://api.themoviedb.org/3/search/movie\"")
             buildConfigField("String", "BASE_URL_NOW_PLAYING", "\"https://api.themoviedb.org/3/movie/now_playing\"")
             buildConfigField("String", "BASE_URL_UPCOMING", "\"https://api.themoviedb.org/3/movie/upcoming\"")
@@ -39,19 +39,17 @@ android {
             buildConfigField("String", "BASE_URL_POSTER_PATH_BIG", "\"http://image.tmdb.org/t/p/w500/\"")
         }
     }
-
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-
     dataBinding {
         enabled = true
     }
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
 
     // kotlin
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$rootProject.kotlinVersion"
@@ -67,7 +65,6 @@ dependencies {
     implementation "com.android.support:design:$rootProject.supportLibraryVersion"
     implementation "com.android.support:support-vector-drawable:$rootProject.supportLibraryVersion"
     implementation "com.android.support:animated-vector-drawable:$rootProject.supportLibraryVersion"
-
     implementation 'com.android.support.constraint:constraint-layout:1.1.0'
     implementation "com.android.support:support-v4:$rootProject.supportLibraryVersion"
 
@@ -117,7 +114,6 @@ dependencies {
     //ViewModel
     implementation "android.arch.lifecycle:extensions:$rootProject.lifecycle"
     annotationProcessor "android.arch.lifecycle:compiler:$rootProject.lifecycle"
-
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'

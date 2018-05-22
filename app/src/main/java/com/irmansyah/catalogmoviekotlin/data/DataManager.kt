@@ -1,4 +1,6 @@
 package com.irmansyah.catalogmoviekotlin.data
 
-interface DataManager {
+import com.irmansyah.catalogmoviekotlin.data.network.ApiHelper
+
+interface DataManager : ApiHelper {
 }

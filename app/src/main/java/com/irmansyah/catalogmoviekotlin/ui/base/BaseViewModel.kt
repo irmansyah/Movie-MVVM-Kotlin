@@ -9,7 +9,7 @@ import io.reactivex.disposables.CompositeDisposable
 abstract class BaseViewModel<N> constructor(var dataManager: DataManager, var schedulerProvider: SchedulerProvider) : ViewModel() {
 
     var navigator: N? = null
-    val isLoading = ObservableBoolean(false)
+    internal val isLoading = ObservableBoolean(false)
 
     val compositeDisposable: CompositeDisposable = CompositeDisposable()
 

@@ -1,9 +1,65 @@
 <resources>
-    <string name="app_name">Catalog Movie Kotlin</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_name">Catalog movie</string>
 
-    <string name="now_playing_fragment">Now Playing</string>
-    <string name="upcoming_fragment">Upcoming</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!--search-->
+    <string name="title">Search</string>
+    <string name="now_playing">Now playing</string>
+    <string name="upcoming">Upcoming</string>
+
+    <string name="overview">Overview</string>
+    <string name="release_date">Release Date</string>
+    <string name="title_movie">title</string>
+    <string name="share">Share</string>
+    <string name="detail">Detail</string>
+
+    <string name="share_string">Lets watch new movie...</string>
+    <string name="share_image_url">Image Shared..</string>
+    <string name="home">Home</string>
+    <string name="preferences">Preferences</string>
+    <string name="setting">Setting</string>
+    <string name="profile">Profile</string>
+    <string name="search">Search</string>
+    <string name="favourite">Favourite</string>
+
+    <string name="favourite_added">Added this movie to favourite</string>
+    <string name="favourite_remove">remove this movie in favourite</string>
+    <string name="favourite_btn">Lets see..</string>
+    <string name="not_ready_message">Sorry this feature is not ready!</string>
+    <string name="favourite_msg">Your favourite</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="empty_text">empty</string>
+
+    <string name="key_reminder_daily">reminder_daily</string>
+    <string name="key_reminder_upcoming">reminder_upcoming</string>
+    <string name="key_setting_locale">setting_locale</string>
+
+    <string name="label_daily_reminder_title">Daily Reminder Notification</string>
+    <string name="label_daily_reminder_summary">Turn on/off daily reminder</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_notification">Notification</string>
+
+    <string name="label_upcoming_reminder_title">Upcoming Reminder Notification</string>
+    <string name="label_upcoming_reminder_summary">Turn on/off upcoming reminder</string>
+
+    <string name="label_setting_locale_title">Setting Locale</string>
+    <string name="label_setting_locale_summary">Change your phone localization</string>
+
+    <string name="label_daily_reminder">Daily Reminder Notification is now</string>
+    <string name="label_upcoming_reminder">Upcoming Reminder Notification is now</string>
+
+    <string name="label_alarm_daily_reminder">Good morning! Ready to pick your new movies today?</string>
+
+    <string name="label_activated">activated!</string>
+    <string name="label_deactivated">deactivated!</string>
+
+
+    <string name="err_load_failed">Failed to load data.\nPlease check your Internet connections!</string>
+
+
 </resources>

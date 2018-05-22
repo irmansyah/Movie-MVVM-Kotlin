@@ -15,7 +15,7 @@ class CatalogMovieKotlinApp : Application(), HasActivityInjector {
     @Inject
     internal lateinit var  activityDispatchingAndroidInjector: DispatchingAndroidInjector<Activity>
 
-    override fun activityInjector(): AndroidInjector<Activity> = activityDispatchingAndroidInjector
+    override fun activityInjector(): AndroidInjector<Activity>? = activityDispatchingAndroidInjector
 
     override fun onCreate() {
         super.onCreate()

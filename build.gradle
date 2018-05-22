@@ -35,7 +35,7 @@ ext {
     minSdkVersion = 17
     targetSdkVersion = 27
     compileSdkVersion = 27
-    buildToolsVersion = '26.0.2'
+    buildToolsVersion = '27.0.3'
 
     // App dependencies
     kotlinVersion = kotlin_version
